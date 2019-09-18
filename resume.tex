@@ -1,6 +1,7 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+\usepackage{comment}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -10,48 +11,68 @@
 \basicInfo{
   \email{j72shen@edu.uwaterloo.ca} \textperiodcentered\ 
   \phone{6479377982} \textperiodcentered\ 
-  \linkedin[Jinhui(Thea) Shen]{}}
+ \github[github.com/TheaaaShen]{}
+  }
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: Java Spring, C++, SQL
+  \item Architectures: OOP, CQRS, Event Sourcing, RESTful API, CRUD, Microservices
+  \item Others: Linux, IntelliJ, Git, Postman, Docker, JPA, Hibernate
+\end{itemize}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{University of Waterloo}}{Sept. 2016 -- Present}
-3A in Double Degree of Computer Science (University of Waterloo) \\
-Business Administration (Wilfrid Laurier University) 
+\section{\faUsers\ Experiences}
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{Institute of Computing Technology, Chinese Academy of Sciences}}{May - Aug. 2017}
-\role{Software Developer Intern}{Beijing, China}
-Using Java to optimize the algorithm for Glycan Structure Identification Software (GIPS)
+\datedsubsection{\textbf{Software Engineer}}{Jan. 2019 - Apr. 2019}
+\datedsubsection{\textit{Autonomic - Transportation as a Service Team}}{Toronto, Canada}
+Used Java to deploy Spring microservices to Kubernetes on AWS
+\begin{itemize}
+  \item Deployed several microservices with CQRS design and Event Sourcing
+  \item Wrote Java Spring code to interact with messages from live vehicle data via Kafka streams
+  \item Experienced with Extreme Programming and Pair Programming
+\end{itemize}
+
+\datedsubsection{\textbf{Associate Programmer Analyst}}{Jan. 2018 - Apr. 2018}
+\datedsubsection{\textit{Scotiabank - Risk Management Information Technology Team}}{Toronto, Canada}
+Used Python and Java to support internal regulatory reporting system 
+\begin{itemize}
+  \item Automated the process of fetching reports using Java 
+  \item Regulatory project management using JIRA and Leankit
+\end{itemize}
+
+\datedsubsection{\textbf{Software Developer Intern}}{May 2017 - Aug. 2017}
+\datedsubsection{\textit{Chinese Academy of Sciences - Institute of Computing Technology}}{Beijing, China}
+Used Java to optimize the algorithm for Glycan Structure Identification Software (GIPS)
 \begin{itemize}
   \item Rewrote and optimized the core data structure and algorithm for the software 
   \item Reduced time consumption to 0.002\%, from 117.87s to 0.0029s
   \item Reduced memory consumption to 2.048\%. from 1763 Mb to 36.1 Mb
 \end{itemize}
 
-\datedsubsection{\textbf{Scotiabank - Risk Management Information Techonology}}{Jan. 2018 -- Apr. 2018}
-\role{Associate Programmer Analyst}{Toronto, Canada}
-Using Python and Java to support  internal regulatory reporting system 
-\begin{itemize}
-  \item Implemented automation program for daily fetching reports
-  \item Managed testing process and technical documentation
-  \item Regulatory project management using JIRA and Leankit
-\end{itemize}
+\section{\faStar\ Projects}
 
-\datedsubsection{\textbf{FindARestaurant}}{Sept. 2017}
+\datedsubsection{\textbf{Hotel Management}}{Sept. 2019 - Present}
 \role{Individual Project}{}
-Build a Python program to find a restaurant with a given location and meal type
+A Restful CRUD application using Java Spring and MySQL that manages room information for a hotel
 \begin{itemize}
-  \item Utilized Google Maps API, Foursquare API and Postman
-  \item Coded in Python for the mainframe of the whole program
+  \item Implemented basic create, read, update, delete features that can be accessed through Postman
+  \item Database is built with MySQL, JPA and Hibernate
 \end{itemize}
 
-
-\section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: Java, C++, C, Python, SQL
-  \item Platform: Linux
-  \item Workspace: Eclipse, Xcode, Git, Postman, PyCharm
+\datedsubsection{\textbf{Quadris}}{Nov. 2017 - Dec. 2017}
+\role{Course Project}{}
+Implemented object-oriented command-line Tetris game with 5 difficulty levels with C++
+\begin{itemize}
+  \item Utilized Subject Observer design pattern and Visitor design pattern
+  \item Implemented visualization through XWindows
 \end{itemize}
 
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{University of Waterloo}}{Sept. 2016 -- Present}
+Candidate for Bachelor of Computer Science (Software Engineering Option)
+\datedsubsection{\textbf{Wilfrid Laurier University}}{Sept. 2016 -- Present}
+Candidate for Bachelor of Business Administration (Marketing Concentration)
+
+\begin{comment}
 \section{\faHeartO\ Activities and Awards}
 \begin{itemize}[parsep=0.5ex]
   \item Hack the North 2017 Participant
@@ -62,8 +83,8 @@ Build a Python program to find a restaurant with a given location and meal type
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
 %  \item Website: 
-  \item GitHub: https://github.com/TheaaaShen
   \item Languages: English - Fluent, Mandarin - Native speaker, Korean -  fluent
 \end{itemize}
 
+\end{comment}
 \end{document}
